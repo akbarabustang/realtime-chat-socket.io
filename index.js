@@ -3,7 +3,7 @@ let port = 3000;
 let htpp = require('http').Server(app);
 
 app.get('/', (req, res) => {
-  res.send('its working');
+  res.sendFile(__dirname +'/index.html');
 });
 
 htpp.listen(port, () => {
